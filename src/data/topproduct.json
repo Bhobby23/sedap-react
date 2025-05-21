@@ -1,0 +1,15 @@
+[
+    {
+      "id": 1,
+      "name": "Rendang Padang",
+      "price": 45000,
+      "image":"../assets/images/rendang.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sate Madura",
+      "price": 30000,
+      "image": "/assets/images/sate.jpg"
+    }
+  ]
+  

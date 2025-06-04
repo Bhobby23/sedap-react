@@ -78,6 +78,13 @@ export default function Sidebar() {
                         icon={HiOutlineUserGroup }
                         />
                       </li>
+                      <li>
+                        <ListMenu
+                        id="notes"
+                        path="/notes"
+                        title="notes"
+                        />
+                      </li>
                 </ul>
             </div>
 

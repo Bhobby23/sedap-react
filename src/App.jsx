@@ -6,6 +6,7 @@ import React from "react";
 import { Suspense } from 'react';
 import { Route, Routes } from "react-router-dom";
 import UserList from './pages/UserList';
+import Notes from './pages/notes';
 
 const GuestLayout = React.lazy(() => import("./layouts/GuestLayout"));
 const GuestHome = React.lazy(() => import("./pages/Guest/GuestHome"));
@@ -29,6 +30,7 @@ const Forgot = React.lazy(() => import("./pages/Auth/Forgot"));
 const AuthLayout = React.lazy(() => import("./layouts/AuthLayout"));
 const Loading = React.lazy(() => import("./components/Loading"));
 
+
 const Dashboard = React.lazy(() => import("./pages/Dashboard"))
 function App() {
 
@@ -44,6 +46,8 @@ function App() {
                 <Route path='/400' element={<Error400/>}/>
                 <Route path="/customers" element={<Customers />} />
                 <Route path="/UserList" element={<UserList />} />
+                <Route path="/notes" element={<Notes />} />
+
                 </Route>
 
                 <Route element={<AuthLayout/>}>
